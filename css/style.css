@@ -7,8 +7,7 @@ body {
 }
 
 .text_box {
-  width: 40vw;
-  max-width: 450px;
+  width: calc(24%);
   position: absolute;
   top: 10%;
   left: 20%;
@@ -21,7 +20,7 @@ body {
 .main_text {
   padding: 5px;
   margin: 0;
-  font-size: clamp(24px, 4vw, 40px);
+  font-size: 2vw;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-weight: 900;
 }
@@ -29,13 +28,13 @@ body {
 .text {
   padding: 5px;
   margin: 15px 0 0 0;
-  font-size: clamp(16px, 2.5vw, 24px);
+  font-size: 1.2vw;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-weight: 400;
 }
 
 .bg_box {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   margin: 0;
@@ -56,7 +55,7 @@ body {
 
 .btn {
   position: absolute;
-  width: 240px;
+  width: 12%;
   top: 70%;
   left: 47%;
   transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
@@ -75,6 +74,7 @@ body {
 }
 
 .btn:hover {
+  animation: none;
   transform: scale(0.98);
   transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
   filter: drop-shadow(0 4px 20px rgba(226, 212, 224, 0.455));
