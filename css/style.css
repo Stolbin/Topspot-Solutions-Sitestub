@@ -57,10 +57,12 @@ body {
   width: 240px;
   top: 70%;
   left: 47%;
-  transition: transform 0.8ms ease-in-out;
+  transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
+  filter: drop-shadow(0 4px 6px rgba(24, 22, 22, 0.5));
 }
 
 .btn:hover {
   transform: scale(0.98);
-  transition: transform 0.8ms ease-in-out;
+  transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
+  filter: drop-shadow(0 4px 20px rgba(226, 212, 224, 0.455));
 }
