@@ -11,18 +11,18 @@
 @keyframes startScale {
   0%,
   100% {
-    transform: scale(0.98);
+    transform: scale(0.98) translateX(-4px);
     filter: drop-shadow(0 5px 5px rgba(24, 22, 22, 0.5));
   }
   50% {
-    transform: scale(1.02);
+    transform: scale(1.02) translateX(4px);
     filter: drop-shadow(0 6px 6px rgba(24, 22, 22, 0.5));
   }
 }
 
 .btn:hover {
   animation: none;
-  transform: scale(0.98);
+  transform: scale(0.98) translateX(-4px);
   transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
   filter: drop-shadow(0 4px 20px rgba(226, 212, 224, 0.455));
 }
