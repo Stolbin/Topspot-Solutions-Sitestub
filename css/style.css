@@ -37,6 +37,18 @@ main {
   border: none;
   z-index: 999;
   color: #ededed;
+  animation: showText 0.2s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  0% {
+    transform: translateY(-100%) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main_text {
@@ -66,7 +78,6 @@ main {
 
   .bg_box {
     width: 80%;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -81,25 +92,41 @@ main {
     position: absolute;
     top: 5%;
     left: 30%;
-    border: none;
-    z-index: 999;
-    color: #ededed;
+  }
+
+  @keyframes showText {
+    0% {
+      transform: translateY(-100%) translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .main_text {
-    padding: 5px;
-    margin: 0;
     font-size: 1.8vw;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    font-family: "OverusedGrotesk", sans-serif;
   }
 
   .text {
-    padding: 5px;
     margin: 15px 0 0 0;
     font-size: 1.1vw;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    font-family: "OverusedGrotesk", sans-serif;
     font-weight: 400;
+  }
+}
+
+@media (max-aspect-ratio: 1/2) {
+  .text_box {
+    width: calc(70%);
+    top: 10%;
+    left: 50%;
+  }
+
+  .main_text {
+    font-size: 6.5vw;
+  }
+
+  .text {
+    font-size: 5vw;
   }
 }

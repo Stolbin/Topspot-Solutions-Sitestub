@@ -47,6 +47,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

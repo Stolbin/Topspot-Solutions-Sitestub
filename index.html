@@ -15,15 +15,21 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Topspot-Solutions</title>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <main>
       <div class="bg_box">
         <picture>
           <source
             media="(max-width: 1020px)"
-            srcset="./images/main_img_320.png"
+            srcset="./images/main_img_320_1.webp"
+            loading="lazy"
           />
-          <img src="./images/main_img_1200.png" alt="bg" class="bg" />
+          <img
+            src="./images/main_img_1200_1.webp"
+            alt="bg"
+            class="bg"
+            loading="lazy"
+          />
         </picture>
 
         <a
@@ -31,7 +37,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="./images/button.png" alt="btn" class="btn" />
+          <img src="./images/button.png" alt="btn" class="btn" loading="lazy" />
         </a>
       </div>
 
