@@ -5,51 +5,101 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(to bottom, #2981f6 0%, #68b0fd 100%);
+}
+
+main {
+  position: relative;
+  width: 105%;
+  height: 100%;
+  left: -3%;
+  top: 15%;
+}
+
+.bg_box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg {
+  width: 100%;
 }
 
 .text_box {
-  width: calc(24%);
+  width: calc(65%);
   position: absolute;
-  top: 10%;
-  left: 20%;
+  top: 1vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: none;
   z-index: 999;
   color: #ededed;
-  font-family: "Montserrat", sans-serif;
 }
 
 .main_text {
   padding: 5px;
   margin: 0;
-  font-size: 2vw;
+  font-size: 5.5vw;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  font-weight: 900;
+  font-family: "OverusedGrotesk", sans-serif;
 }
 
 .text {
   padding: 5px;
-  margin: 15px 0 0 0;
-  font-size: 1.2vw;
+  margin: 5px 0 0 0;
+  font-size: 4vw;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  font-weight: 400;
+  font-family: "OverusedGrotesk", sans-serif;
+  font-weight: 300;
 }
 
-.bg_box {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-position: center;
-  background-size: contain;
-}
+@media (min-width: 1020px) {
+  main {
+    position: relative;
+    max-width: 80%;
+    height: 90%;
+    margin: 0 auto;
+  }
 
-.bg {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  display: block;
-  object-fit: cover;
+  .bg_box {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bg {
+    width: 100%;
+  }
+
+  .text_box {
+    width: calc(24%);
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    border: none;
+    z-index: 999;
+    color: #ededed;
+  }
+
+  .main_text {
+    padding: 5px;
+    margin: 0;
+    font-size: 1.8vw;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: "OverusedGrotesk", sans-serif;
+  }
+
+  .text {
+    padding: 5px;
+    margin: 15px 0 0 0;
+    font-size: 1.1vw;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: "OverusedGrotesk", sans-serif;
+    font-weight: 400;
+  }
 }

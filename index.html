@@ -17,14 +17,15 @@
   </head>
   <body>
     <main>
-      <div class="text_box">
-        <h2 class="main_text">We`re temporarily under reconstruction</h2>
-        <p class="text">
-          In the meantime, feel free to explore our StreamAdvisor service.
-        </p>
-      </div>
       <div class="bg_box">
-        <img src="./images/BG.jpg" alt="bg" class="bg" />
+        <picture>
+          <source
+            media="(max-width: 1020px)"
+            srcset="./images/main_img_320_2.png"
+          />
+          <img src="./images/main_img_1200_1.png" alt="bg" class="bg" />
+        </picture>
+
         <a
           href="https://streamadvisor.com.ua/"
           target="_blank"
@@ -32,6 +33,13 @@
         >
           <img src="./images/button.png" alt="btn" class="btn" />
         </a>
+      </div>
+
+      <div class="text_box">
+        <h2 class="main_text">We`re temporarily under reconstruction</h2>
+        <p class="text">
+          In the meantime, feel free to explore our StreamAdvisor service.
+        </p>
       </div>
     </main>
     <script src="./script.js"></script>
