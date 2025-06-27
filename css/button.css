@@ -1,3 +1,8 @@
+.btn_show {
+  animation: btnShow 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
 .btn {
   position: absolute;
   width: 25%;
@@ -17,6 +22,15 @@
   50% {
     transform: scale(1.02) translateX(4px);
     filter: drop-shadow(0 6px 6px rgba(24, 22, 22, 0.5));
+  }
+}
+
+@keyframes btnShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
