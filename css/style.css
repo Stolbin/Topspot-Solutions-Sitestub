@@ -26,6 +26,17 @@ main {
 
 .bg {
   width: 100%;
+  animation: bgShow 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+@keyframes bgShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .text_box {
