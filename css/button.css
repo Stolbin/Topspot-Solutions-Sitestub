@@ -1,5 +1,5 @@
 .btn_show {
-  animation: btnShow 1s ease-out 0.8s forwards;
+  animation: btnShow 1s ease-out 0.7s forwards;
   opacity: 0;
 }
 
@@ -10,7 +10,7 @@
   left: 28%;
   transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
   filter: drop-shadow(0 4px 6px rgba(24, 22, 22, 0.5));
-  animation: startScale 2s ease-in-out infinite;
+  animation: startScale 2s ease-in-out 0.8s infinite;
 }
 
 @keyframes startScale {
@@ -47,12 +47,8 @@
 
 @media (min-width: 1020px) {
   .btn {
-    position: absolute;
     width: 15%;
-    top: 59%;
     left: 48%;
-    transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
-    filter: drop-shadow(0 4px 6px rgba(24, 22, 22, 0.5));
-    animation: startScale 2s ease-in-out infinite;
+    animation: startScale 2s ease-in-out 0.8s infinite;
   }
 }
