@@ -72,7 +72,6 @@ main {
 }
 
 .text {
-  padding: 5px;
   margin: 5px 0 0 0;
   font-size: 14px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
