@@ -30,6 +30,7 @@ main {
   width: 100%;
   animation: bgShow 1s ease-out 0.5s forwards;
   opacity: 0;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
 }
 
 @keyframes bgShow {
